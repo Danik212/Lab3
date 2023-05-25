@@ -51,5 +51,5 @@ fun MyAlertDialog() {
                 }
             }
         )
-    }terver
+    }
 }
