@@ -29,11 +29,11 @@ fun NavigationScreen() {
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
 
-            NavigationButton(stringResource(id = R.string.button_view_text), Screen.Row)
-            NavigationButton(stringResource(id = R.string.button_textField), Screen.Column)
-            NavigationButton(stringResource(id = R.string.button_buttons), Screen.Box)
-            NavigationButton(stringResource(id = R.string.button_progress), Screen.Surface)
-            NavigationButton(stringResource(id = R.string.button_alertDialog), Screen.Scaffold)
+            NavigationButton(stringResource(id = R.string.Row), Screen.Row)
+            NavigationButton(stringResource(id = R.string.Column), Screen.Column)
+            NavigationButton(stringResource(id = R.string.Box), Screen.Box)
+            NavigationButton(stringResource(id = R.string.Surface), Screen.Surface)
+            NavigationButton(stringResource(id = R.string.Scaffold), Screen.Scaffold)
         }
     }
 }
