@@ -33,8 +33,6 @@ fun MyColumn(){
                 text = stringResource(id = textResId),
                 fontSize = 22.sp
             )
-
         }
     }
-
 }

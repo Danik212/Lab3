@@ -1,7 +1,9 @@
 import androidx.annotation.DrawableRes
 import androidx.annotation.StringRes
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.horizontalScroll
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
@@ -28,7 +30,7 @@ fun ScrollingScreen(){
 
 @Composable
 fun MyScrollingScreen(modifier: Modifier = Modifier) {
-    Column(modifier = modifier.verticalScroll(rememberScrollState())){
+    Row(modifier = modifier.horizontalScroll(rememberScrollState())){
         BookImage(R.drawable.advanced_architecture_android, R.string.ys)
         BookImage(R.drawable.kotlin_aprentice, R.string.kt)
         BookImage(R.drawable.kotlin_coroutines, R.string.kt1)

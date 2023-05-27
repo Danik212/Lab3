@@ -1,7 +1,5 @@
 package com.raywenderlich.android.lab1.screens
 
-package com.topic2.android.notes
-
 import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.RowScope
@@ -45,7 +43,8 @@ private val items = listOf(
 fun GridScreen(){
     LazyVerticalGrid(
         modifier = Modifier.fillMaxSize(),
-        columns = GridCells.Fixed(3) ,
+        columns = GridCells.Fixed(3),
+        //cells = GridCells.Fixed(3),
         content = {
             items(count = items.size){item ->
                 GridIcon(IconResource(items[item], true))

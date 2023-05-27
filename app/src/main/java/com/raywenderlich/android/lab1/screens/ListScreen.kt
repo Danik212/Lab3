@@ -1,7 +1,5 @@
 package com.raywenderlich.android.lab1.screens
 
-package com.raywenderlich.android.lab1.screens
-
 import androidx.annotation.StringRes
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.*
@@ -91,10 +89,10 @@ fun ListItem(bookCategory: BookCategory, modifier: Modifier=Modifier) {
     }
 }
 @Composable
-fun BookImage(imageResorce: Int){
+fun BookImage(imageResource: Int){
     Image(
         modifier = Modifier.size(170.dp,200.dp),
-        painter = painterResource(id = imageResorce),
+        painter = painterResource(id = imageResource),
         contentScale = ContentScale.Fit,
         contentDescription = stringResource(R.string.ob)
     )
